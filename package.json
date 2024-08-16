@@ -9,20 +9,23 @@
     "kind": "plugin"
   },
   "peerDependencies": {
-    "@strapi/strapi": "^4.1.12"
+    "@strapi/strapi": "4.11.5"
   },
   "dependencies": {
     "@geoman-io/leaflet-geoman-free": "^2.12.0",
     "@mapbox/geojson-rewind": "^0.5.1",
-    "@strapi/strapi": "^4.1.12",
+    "@strapi/strapi": "4.11.5",
     "@turf/turf": "^6.5.0",
-    "axios": "^0.26.0",
+    "axios": ">=1.6.0",
     "codemirror": "^5.65.13",
     "knex": "^1.0.3",
     "knex-postgis": "^0.14.3",
     "leaflet": "^1.8.0",
     "reproject": "^1.2.6",
-    "resize-observer-polyfill": "^1.5.1"
+    "resize-observer-polyfill": "^1.5.1",
+    "@strapi/plugin-content-type-builder": "4.24.2",
+    "@strapi/design-system": "1.18.0",
+    "@uiw/react-codemirror": "4.22.0"
   },
   "scripts": {
     "publish:patch": "npm version patch && npm publish",
@@ -45,7 +48,7 @@
     }
   ],
   "engines": {
-    "node": ">=12.x.x <=16.x.x",
+    "node": ">=12.x.x <=18.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT",
